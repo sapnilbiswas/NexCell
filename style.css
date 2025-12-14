@@ -96,7 +96,7 @@ ul {
     text-align: center;
     margin-bottom: 3rem;
     background: var(--gradient-primary);
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
 
@@ -107,6 +107,51 @@ ul {
 .bg-gradient-light {
     background: var(--bg-secondary);
 }
+.why-ideathon-hero {
+    margin-top: 3rem;
+    padding: 2rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.why-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.why-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.why-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.why-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.why-item p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    line-height: 1.4;
+}
+
 
 .dark .bg-gradient-light,
 .dark .bg-light-blue {
@@ -1392,4 +1437,76 @@ ul {
 
 .venue-link:hover {
     color: var(--primary-blue);
+}/* Sponsors Section */
+.sponsors-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+
+.sponsor-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    border: 1px solid var(--border-color);
+    width: 250px;
+    transition: var(--transition);
+    animation: float 4s ease-in-out infinite;
+}
+
+.dark .sponsor-card {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.sponsor-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-blue);
+    transform: translateY(-5px);
+    /* Interaction feedback */
+    animation-play-state: paused;
+    /* Pause floating on hover */
+}
+
+.sponsor-card:nth-child(even) {
+    animation-delay: 2s;
+    /* Offset animation for uneven floating */
+}
+
+.sponsor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    background: #f1f5f9;
+    /* Light background for logos */
+    padding: 10px;
+}
+
+.dark .sponsor-card img {
+    background: #1e293b;
+}
+
+.sponsor-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
