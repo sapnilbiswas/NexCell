@@ -1,0 +1,50 @@
+.prize-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    /* Stronger lift */
+    background: var(--bg-card);
+    border-color: var(--primary-blue);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.dark .prize-card:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+    /* Blue glow for default */
+    background: #1e293b;
+    border-color: #60a5fa;
+}
+
+.prize-card.gold:hover {
+    transform: translateY(-15px) scale(1.15);
+    /* Keep larger scale */
+    border-color: #fbbf24;
+    box-shadow: 0 25px 50px -12px rgba(251, 191, 36, 0.5);
+    /* Golden glow */
+}
+
+.dark .prize-card.gold:hover {
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.4);
+    background: #1e293b;
+    border-color: #fcd34d;
+}
+
+.prize-card.silver:hover {
+    border-color: #9ca3af;
+    box-shadow: 0 20px 25px -5px rgba(156, 163, 175, 0.5);
+}
+
+.dark .prize-card.silver:hover {
+    box-shadow: 0 0 30px rgba(156, 163, 175, 0.4);
+    background: #1e293b;
+    border-color: #e5e7eb;
+}
+
+.prize-card.bronze:hover {
+    border-color: #b45309;
+    box-shadow: 0 20px 25px -5px rgba(180, 83, 9, 0.5);
+}
+
+.dark .prize-card.bronze:hover {
+    box-shadow: 0 0 30px rgba(217, 119, 6, 0.4);
+    background: #1e293b;
+    border-color: #fbbf24;
+}

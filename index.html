@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirai 0-1 Ideathon | NexCell Entrepreneurship Club</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <!-- Mirai Logo -->
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQESji6QYn0B1Q/company-logo_200_200/B4DZawDt6bHAAM-/0/1746710488373/mirai_school_of_technology_logo?e=2147483647&v=beta&t=ffQsWJ1xdSwCqKPKbDTLnoQscngGhXTd4XeEhFSNOGY"
+                    alt="Mirai Logo" class="logo">
+                <span class="logo-separator">X</span>
+                <!-- NexCell Logo -->
+                <img src="Nex.png" alt="NexCell Logo" class="logo nexcell-logo">
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#prizes" class="nav-link">Prizes</a>
+                <a href="#club" class="nav-link">Club</a>
+                <a href="#register" class="btn-nav">Register</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="badge fade-in-up">NexCell Entrepreneurship Club Presents</div>
+            <h1 class="hero-title fade-in-up delay-1">Mirai <span class="gradient-text">0-1</span> Ideathon</h1>
+
+            <!-- Typewriter Tagline -->
+            <div class="typewriter-container fade-in-up delay-2">
+                <div class="typewriter">Think It, Build It, Code It</div>
+            </div>
+
+            <p class="hero-subtitle fade-in-up delay-2" style="margin-top: 1rem;">Transform Your Ideas into Reality.
+                Innovate, Design, and Pitch
+                Your Vision.</p>
+
+            <div class="hero-cards fade-in-up delay-3">
+                <div class="info-card">
+                    <i data-lucide="calendar"></i>
+                    <span>Event: Dec 19th</span>
+                </div>
+                <div class="info-card">
+                    <i data-lucide="trophy"></i>
+                    <span>₹15,000 Prize Pool</span>
+                </div>
+            </div>
+
+            <a href="#register" class="btn-primary mt-8 fade-in-up delay-4">
+                Register Now
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+        <div class="hero-bg-shapes"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About the Ideathon</h2>
+
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon-box">
+                        <i data-lucide="lightbulb"></i>
+                    </div>
+                    <h3>Innovate</h3>
+                    <p>Develop groundbreaking solutions across diverse domains like AI, FinTech, and Sustainability.</p>
+                </div>
+                <div class="feature-card animate-on-scroll delay-1">
+                    <div class="icon-box">
+                        <i data-lucide="target"></i>
+                    </div>
+                    <h3>Design</h3>
+                    <p>Create stunning prototypes using Figma. Visual design and user experience are key.</p>
+                </div>
+                <div class="feature-card animate-on-scroll delay-2">
+                    <div class="icon-box">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3>Compete</h3>
+                    <p>Pitch your idea to industry experts. Win amazing cash prizes and gain recognition.</p>
+                </div>
+            </div>
+
+            <div class="domains-card animate-on-scroll mt-12">
+                <h3>Problem Domains</h3>
+                <div class="domains-list">
+                    <span class="domain-tag">Healthcare</span>
+                    <span class="domain-tag">Education</span>
+                    <span class="domain-tag">Sustainability</span>
+                    <span class="domain-tag">FinTech</span>
+                    <span class="domain-tag">Smart Cities</span>
+                    <span class="domain-tag">Social Impact</span>
+                    <span class="domain-tag">AI Solutions</span>
+                    <span class="domain-tag">Web-based Solutions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes Section (Moved Up) -->
+    <section id="prizes" class="section bg-light-blue prizes-section">
+        <div class="container">
+            <h2 class="section-title">Win Exciting Prizes</h2>
+
+            <div class="prizes-grid">
+                <!-- 2nd Place -->
+                <div class="prize-card silver animate-on-scroll delay-1">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>2nd Place</h3>
+                    <div class="prize-amount">₹5,000</div>
+                    <p>Certificate + Runner-up Swag</p>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="prize-card gold animate-on-scroll">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>1st Place</h3>
+                    <div class="prize-amount">₹7,000</div>
+                    <p>Certificate + Trophy + Exclusive Merch</p>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="prize-card bronze animate-on-scroll delay-2">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>3rd Place</h3>
+                    <div class="prize-amount">₹3,000</div>
+                    <p>Certificate + Swag</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="section">
+        <div class="container">
+            <h2 class="section-title">Event Schedule</h2>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <!-- Round 1 -->
+                <div class="timeline-item left animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="round-header">
+                            <i data-lucide="monitor"></i>
+                            <h3>Round 1: Virtual Submission</h3>
+                        </div>
+                        <ul class="timeline-details">
+                            <li><strong>Deadline:</strong> Dec 18th</li>
+                            <li><strong>Submit:</strong> PPT + Idea + Sector + 3min Video</li>
+                            <li><strong>Platform:</strong> Online Submission Portal</li>
+                        </ul>
+                        <div class="evaluation-criteria">
+                            <p>Selection: Top 15 teams shortlisted</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Round 2 -->
+                <div class="timeline-item right animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="round-header">
+                            <i data-lucide="users"></i>
+                            <h3>Round 2: Offline Grid (Dec 19th)</h3>
+                        </div>
+                        <ul class="timeline-details timeline-schedule">
+                            <li><span>09:30 AM</span> Registration</li>
+                            <li><span>10:30 AM</span> Opening Ceremony & Panel Intro</li>
+                            <li><span>11:00 AM</span> Main Event Starts</li>
+                            <li><span>03:00 PM</span> Lunch Break</li>
+                            <li><span>04:00 PM</span> Prize Distribution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Resources Section (Moved Down) -->
+    <section id="resources" class="section bg-light-blue">
+        <div class="container">
+            <h2 class="section-title">Event Resources</h2>
+            <p class="section-subtitle">Download official event materials</p>
+
+            <div class="resources-grid">
+                <div class="resource-card animate-on-scroll">
+                    <div class="resource-icon-lg">
+                        <i data-lucide="image"></i>
+                    </div>
+                    <h3>Official Event Poster</h3>
+                    <p>Download the official Mirai 0-1 Ideathon poster to share.</p>
+                    <button class="btn-download">
+                        <i data-lucide="download"></i>
+                        <span>Download</span>
+                    </button>
+                    <span class="file-meta">PDF • 2.5 MB</span>
+                </div>
+
+                <div class="resource-card animate-on-scroll delay-1">
+                    <div class="resource-icon-lg">
+                        <i data-lucide="presentation"></i>
+                    </div>
+                    <h3>Event Presentation</h3>
+                    <p>Detailed information about rounds, rules, and guidelines.</p>
+                    <button class="btn-download">
+                        <i data-lucide="download"></i>
+                        <span>Download</span>
+                    </button>
+                    <span class="file-meta">PPTX • 5.8 MB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Club Introduction Section -->
+    <section id="club" class="section">
+        <div class="container">
+            <h2 class="section-title">About NexCell</h2>
+            <div class="club-intro animate-on-scroll">
+                <p>NexCell is the premier Entrepreneurship Club of Mirai School of Technology. We foster innovation,
+                    leadership, and the startup spirit among students, turning passionate learners into future founders.
+                </p>
+            </div>
+
+            <div class="team-section mt-12">
+                <h3 class="subsection-title">Our Team</h3>
+                <div class="team-grid" id="teamGrid">
+                    <!-- Initial 5 Members -->
+                    <!-- Using UI Avatars for placeholders -->
+                    <div class="team-card animate-on-scroll">
+                        <img src="https://ui-avatars.com/api/?name=Member+1&background=3b82f6&color=fff" alt="Member 1">
+                        <h4>Member 1</h4>
+                        <p>President</p>
+                    </div>
+                    <div class="team-card animate-on-scroll delay-1">
+                        <img src="https://ui-avatars.com/api/?name=Member+2&background=3b82f6&color=fff" alt="Member 2">
+                        <h4>Member 2</h4>
+                        <p>Vice President</p>
+                    </div>
+                    <div class="team-card animate-on-scroll delay-2">
+                        <img src="https://ui-avatars.com/api/?name=Member+3&background=3b82f6&color=fff" alt="Member 3">
+                        <h4>Member 3</h4>
+                        <p>Tech Lead</p>
+                    </div>
+                    <div class="team-card animate-on-scroll delay-3">
+                        <img src="https://ui-avatars.com/api/?name=Member+4&background=3b82f6&color=fff" alt="Member 4">
+                        <h4>Member 4</h4>
+                        <p>Events Head</p>
+                    </div>
+                    <div class="team-card animate-on-scroll delay-4">
+                        <img src="https://ui-avatars.com/api/?name=Member+5&background=3b82f6&color=fff" alt="Member 5">
+                        <h4>Member 5</h4>
+                        <p>Creative Lead</p>
+                    </div>
+                </div>
+
+                <!-- Hidden Members Container -->
+                <div class="team-grid hidden-members" id="moreMembers">
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+6&background=3b82f6&color=fff" alt="Member 6">
+                        <h4>Member 6</h4>
+                        <p>Operations</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+7&background=3b82f6&color=fff" alt="Member 7">
+                        <h4>Member 7</h4>
+                        <p>Marketing</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+8&background=3b82f6&color=fff" alt="Member 8">
+                        <h4>Member 8</h4>
+                        <p>Logistics</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+9&background=3b82f6&color=fff" alt="Member 9">
+                        <h4>Member 9</h4>
+                        <p>Design</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+10&background=3b82f6&color=fff"
+                            alt="Member 10">
+                        <h4>Member 10</h4>
+                        <p>Tech Team</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+11&background=3b82f6&color=fff"
+                            alt="Member 11">
+                        <h4>Member 11</h4>
+                        <p>Events</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+12&background=3b82f6&color=fff"
+                            alt="Member 12">
+                        <h4>Member 12</h4>
+                        <p>Content</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+13&background=3b82f6&color=fff"
+                            alt="Member 13">
+                        <h4>Member 13</h4>
+                        <p>Social Media</p>
+                    </div>
+                    <div class="team-card"><img
+                            src="https://ui-avatars.com/api/?name=Member+14&background=3b82f6&color=fff"
+                            alt="Member 14">
+                        <h4>Member 14</h4>
+                        <p>Relations</p>
+                    </div>
+                </div>
+
+                <button class="btn-outline mt-8" id="viewTeamBtn">
+                    View More Team Members
+                    <i data-lucide="chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video & Registration Section -->
+    <section id="register" class="section bg-gradient-light">
+        <div class="container registration-container">
+            <div class="video-preview animate-on-scroll">
+                <div class="video-placeholder">
+                    <div class="play-button">
+                        <i data-lucide="play"></i>
+                    </div>
+                    <span>Watch Teaser</span>
+                </div>
+            </div>
+
+            <div class="registration-content animate-on-scroll delay-1">
+                <h2>Ready to Innovate?</h2>
+                <p>Join us for the Mirai 0-1 Ideathon and showcase your skills to the world. Don't miss this opportunity
+                    to win big prizes and network with industry leaders.</p>
+
+                <div class="warning-box">
+                    <i data-lucide="info"></i>
+                    <span>Registration redirects to external portal</span>
+                </div>
+
+                <a href="https://pravinghodake153.github.io/new-updated-ideathon/" class="btn-primary btn-large">
+                    Register Now
+                    <i data-lucide="external-link"></i>
+                </a>
+                <p class="small-note">Deadline: Dec 18th</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="section">
+        <div class="container">
+            <h2 class="section-title">Venue</h2>
+            <div class="venue-card animate-on-scroll">
+                <div class="venue-info">
+                    <h3>Rathinam Institute of Technology</h3>
+                    <address>
+                        <a href="https://maps.app.goo.gl/bmG41LCKTDCvHgF49" target="_blank" rel="noopener noreferrer"
+                            class="venue-link">
+                            <i data-lucide="map-pin"></i>
+                            Survey No. 137, Doddakamanahalli, Begur Hobli,<br>Bengaluru South - 560076
+                        </a>
+                    </address>
+                </div>
+                <div class="venue-map">
+                    <!-- Google Maps Embed for Rathinam Technical Campus -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=Survey+No.+137,+Doddakamanahalli,+Begur+Hobli,+Bengaluru+South+-+560076&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logos">
+                    <img src="Nex.png" alt="Mirai Logo" class="footer-logo">
+                    <div class="nexcell-text">NexCell</div>
+                </div>
+                <h3>Contact Us</h3>
+                <ul class="contact-list">
+                    <li><i data-lucide="mail"></i> nexcellrathinam@gmail.com</li>
+                    <li><i data-lucide="phone"></i> +91 98765 43210</li>
+                    <li><i data-lucide="map-pin"></i> Rathinam Institute of Technology,<br>Bangalore</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NexCell Entrepreneurship Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
