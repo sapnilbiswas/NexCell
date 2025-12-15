@@ -1000,72 +1000,134 @@ ul {
     color: #fbbf24;
 }
 
-/* Participation Goodies Banner */
+/* Participation Goodies Banner V2 */
 .goodies-banner {
     margin-top: 4rem;
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    position: relative;
     border-radius: 1.5rem;
     padding: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
     color: white;
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative;
+    /* Glassmorphism base */
+    background: rgba(30, 58, 138, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.goodies-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.4) 0%, transparent 60%);
+    animation: rotateGlow 15s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .goodies-content {
     flex: 1;
     z-index: 2;
+    padding-left: 1rem;
 }
 
 .goodies-content h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #ffffff, #e2e8f0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .goodies-content p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    color: #e2e8f0;
 }
 
 .goodies-list {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
 }
 
 .goodies-list li {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
     font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.goodies-list li:hover {
+    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .goodies-list i {
     color: #4ade80;
-    /* Green checkmark */
+    filter: drop-shadow(0 0 5px rgba(74, 222, 128, 0.5));
+}
+
+.btn-claim {
+    background: white;
+    color: #2563eb;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-claim:hover {
+    background: #f8fafc;
+    color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .goodies-images {
-    flex: 1;
+    flex: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 300px;
+    height: 400px;
+    z-index: 1;
 }
 
 .goodie-img {
     position: absolute;
-    width: 180px;
+    width: 220px;
     height: auto;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-    border-radius: 12px;
+    filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.25));
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .floating-1 {
