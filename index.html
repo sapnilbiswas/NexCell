@@ -4,536 +4,603 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirai School of Technology</title>
+    <title>Mirai 0-1 Ideathon | NexCell Entrepreneurship Club</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/favicon.ico">
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- <header class="header">
-        <div class="container header-container">
-            <div class="logo">
-                <span class="logo-mirai">Mirai</span><span class="logo-school">School of Technology</span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <!-- Mirai Logo -->
+                <img src="https://media.licdn.com/dms/image/v2/D4D0BAQESji6QYn0B1Q/company-logo_200_200/B4DZawDt6bHAAM-/0/1746710488373/mirai_school_of_technology_logo?e=2147483647&v=beta&t=ffQsWJ1xdSwCqKPKbDTLnoQscngGhXTd4XeEhFSNOGY"
+                    alt="Mirai Logo" class="logo">
+                <span class="logo-separator">X</span>
+                <!-- NexCell Logo -->
+                <img src="Nex.png" alt="NexCell Logo" class="logo nexcell-logo">
             </div>
-            <nav class="nav">
-                 Navigation links can go here if needed, though the screenshot mainly shows the logo and hero -->
-    <!-- <div class="lang-switch">
-                    <span>English</span>
-                </div>
-            </nav>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#schedule" class="nav-link">Schedule</a>
+                <a href="#prizes" class="nav-link">Prizes</a>
+                <a href="#club" class="nav-link">Club</a>
+                <a href="#register" class="btn-nav">Register</a>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i data-lucide="moon"></i>
+                </button>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
         </div>
-    </header> -->
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-container">
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <div class="badge fade-in-up">NexCell Entrepreneurship Club Presents</div>
+            <h1 class="hero-title fade-in-up delay-1">Mirai <span class="gradient-text">0-1</span> Ideathon</h1>
 
-            <!-- LEFT CONTENT -->
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Engineer your future <br /> with AI
-                </h1>
+            <!-- Typewriter Tagline -->
+            <div class="typewriter-container fade-in-up delay-2">
+                <div class="typewriter">Think It, Build It, Code It</div>
+            </div>
 
-                <div class="hero-badge">AI-First B.Tech Program</div>
+            <p class="hero-subtitle fade-in-up delay-2" style="margin-top: 1rem;">If you have an idea worth exploring, a
+                problem worth solving, or a vision worth pitching—
+                Mirai 0–1 Ideathon is your stage.
 
-                <div class="hero-subtitle">
-                    <p>
-                        <i class="bi bi-check-circle"></i>
-                        Four Year Undergraduate Program.
-                    </p>
-                    <p>
-                        <i class="bi bi-check-circle"></i>
-                        B.Tech in CSE [AI] degree by UGC approved university.
-                    </p>
+                Register. Innovate. Prototype. Pitch.</p>
+
+            <div class="hero-cards fade-in-up delay-3">
+                <div class="info-card">
+                    <i data-lucide="calendar"></i>
+                    <span>Event: Dec 19th</span>
                 </div>
+                <div class="info-card">
+                    <i data-lucide="trophy"></i>
+                    <span>₹15,000 Prize Pool</span>
+                </div>
+            </div>
 
+            <a href="#register" class="btn-primary mt-8 fade-in-up delay-4">
+                Register Now
+                <i data-lucide="arrow-right"></i>
+            </a>
+            <!-- Why Ideathon Highlights -->
+            <div class="why-ideathon-hero fade-in-up delay-5">
+                <h3 class="why-title">Why Mirai 0–1 Ideathon?</h3>
 
-                <div class="hero-info-grid">
-                    <div class="info-card">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 14C16.4183 14 20 12.2091 20 10C20 7.79086 16.4183 6 12 6C7.58172 6 4 7.79086 4 10C4 12.2091 7.58172 14 12 14Z"
-                                    stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M12 14V20" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M20 10V16C20 18.2091 16.4183 20 12 20C7.58172 20 4 18.2091 4 16V10"
-                                    stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                <div class="why-grid">
+                    <div class="why-item">
+                        <span class="why-icon"></span>
+                        <div>
+                            <h4>Real-World Problem Solving</h4>
+                            <p>Work on industry-relevant problem statements across diverse domains.</p>
                         </div>
-                        <h4>Eligibility</h4>
-                        <p>Class 12 students with Physics, Chemistry and Mathematics</p>
                     </div>
-                    <div class="info-card">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" stroke="#007bff" stroke-width="2" />
-                                <path d="M12 6V12L16 14" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+
+                    <div class="why-item">
+                        <span class="why-icon"></span>
+                        <div>
+                            <h4>Design-Driven Innovation</h4>
+                            <p>Apply structured design thinking methodologies to craft user-centric solutions.</p>
                         </div>
-                        <h4>Program Duration</h4>
-                        <p>4 Years Full Time Undergraduate Program</p>
                     </div>
-                    <div class="info-card">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="#007bff"
-                                    stroke-width="2" />
-                                <line x1="16" y1="2" x2="16" y2="6" stroke="#007bff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <line x1="8" y1="2" x2="8" y2="6" stroke="#007bff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                                <line x1="3" y1="10" x2="21" y2="10" stroke="#007bff" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+
+                    <div class="why-item">
+                        <span class="why-icon"></span>
+                        <div>
+                            <h4>Prototype-First Approach</h4>
+                            <p>Translate ideas into interactive prototypes using modern AI and design tools.</p>
                         </div>
-                        <h4>Exam Date</h4>
-                        <p>26th August, 2025</p>
                     </div>
-                    <div class="info-card">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z"
-                                    stroke="#007bff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M14 2V8H20" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M16 13H8" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M16 17H8" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                                <path d="M10 9H9H8" stroke="#007bff" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
+
+                    <div class="why-item">
+                        <span class="why-icon"></span>
+                        <div>
+                            <h4>Pitch Like a Founder</h4>
+                            <p>Learn how to communicate ideas clearly, confidently, and convincingly.</p>
                         </div>
-                        <h4>Last Date to Apply</h4>
-                        <p>30th August, 2025</p>
+                    </div>
+
+                    <div class="why-item">
+                        <span class="why-icon"></span>
+                        <div>
+                            <h4>Entrepreneurial Mindset</h4>
+                            <p>Build skills beyond academics—creativity, leadership, and strategic thinking.</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- FORM -->
-            <div class="hero-form-container">
-    <div class="form-header">
-        <button id="register-tab" type="button" class="active">Register</button>
-        <button id="login-tab" type="button">Log In</button>
-    </div>
-
-    <form class="lead-form">
-        <div class="form-group">
-            <input type="text" placeholder="Enter Name *" required>
         </div>
-
-        <div class="form-group">
-            <input type="email" placeholder="Enter Email Address *" required>
-        </div>
-
-        <div class="form-group phone-group">
-            <span class="country-code" style="background-color: #e9e2e2;">+91</span>
-            <input type="tel" placeholder="Enter Mobile Number *" required>
-        </div>
-
-        <div class="form-group">
-            <input type="text" placeholder="Enter OTP" required>
-        </div>
-
-        <div class="form-group">
-            <select required>
-                <option value="" disabled selected>Select Year Of Passing Class 12th</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <select required>
-                <option value="" disabled selected>Select Class 12th Stream</option>
-                <option value="maths">Maths</option>
-                <option value="bio">Bio</option>
-                <option value="both">Maths And Bio</option>
-            </select>
-        </div>
-
-        <button type="submit" class="submit-btn">APPLY NOW</button>
-    </form>
-</div>
-
-        </div>
+        <div class="hero-bg-shapes"></div>
     </section>
 
-    <!-- Our Campuses -->
-    <section class="section campuses" aria-labelledby="campus-title">
+    <!-- About Section -->
+    <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Our Campuses</h2>
-            <p class="section-subtitle">
-                Explore AI-first tech programs offered at AICTE-approved partner colleges across India.
-            </p>
+            <h2 class="section-title">About the Ideathon</h2>
 
-            <div class="campus-grid">
-                <!-- Campus Card 1 -->
-                <div class="campus-card">
-                    <div class="campus-image" style="background-image: url('assets/images/campus1.jpg');">
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="icon-box">
+                        <i data-lucide="lightbulb"></i>
                     </div>
-
-                    <div class="campus-info">
-                        <h3>Hi-Tech Institute of Engineering & Technology</h3>
-                        <p class="campus-location">Ghaziabad, Uttar Pradesh</p>
-                        <p class="campus-course">B.Tech CSE-AI/ML</p>
-                    </div>
+                    <h3>Innovate</h3>
+                    <p>Develop groundbreaking solutions across diverse domains like AI, FinTech, and Sustainability.</p>
                 </div>
-
-                <!-- Campus Card 2 -->
-                <div class="campus-card">
-                    <div class="campus-image" style="background-image: url('assets/images/campus2.jpg');">
+                <div class="feature-card animate-on-scroll delay-1">
+                    <div class="icon-box">
+                        <i data-lucide="target"></i>
                     </div>
-
-                    <div class="campus-info">
-                        <h3>Rathinam Institute of Technology</h3>
-                        <p class="campus-location">Bengaluru, Karnataka</p>
-                        <p class="campus-course">BE CSE-AI/ML</p>
+                    <h3>Design</h3>
+                    <p>Create stunning prototypes using Figma. Visual design and user experience are key.</p>
+                </div>
+                <div class="feature-card animate-on-scroll delay-2">
+                    <div class="icon-box">
+                        <i data-lucide="award"></i>
                     </div>
+                    <h3>Compete</h3>
+                    <p>Pitch your idea to industry experts. Win amazing cash prizes and gain recognition.</p>
+                </div>
+            </div>
+
+            <div class="domains-card animate-on-scroll mt-12">
+                <h3>Problem Domains</h3>
+                <div class="domains-list">
+                    <span class="domain-tag">Healthcare</span>
+                    <span class="domain-tag">Education</span>
+                    <span class="domain-tag">Sustainability</span>
+                    <span class="domain-tag">FinTech</span>
+                    <span class="domain-tag">Smart Cities</span>
+                    <span class="domain-tag">Social Impact</span>
+                    <span class="domain-tag">AI Solutions</span>
+                    <span class="domain-tag">Web-based Solutions</span>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Admission Process -->
-    <section class="section admission">
+    <!-- Prizes Section (Moved Up) -->
+    <section id="prizes" class="section bg-light-blue prizes-section">
         <div class="container">
-            <div class="admission-header-card">
-                <h2>Admission Process</h2>
-                <p>From Application to Enrolment keep an eye on these key dates.</p>
+            <h2 class="section-title">Win Exciting Prizes</h2>
+
+            <div class="prizes-grid">
+                <!-- 2nd Place -->
+                <div class="prize-card silver animate-on-scroll delay-1">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>2nd Place</h3>
+                    <div class="prize-amount">🏆 ₹5,000</div>
+                    <p>Trophy + Certificate + Runner-up Swag</p>
+                </div>
+
+                <!-- 1st Place -->
+                <div class="prize-card gold animate-on-scroll">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>1st Place</h3>
+                    <div class="prize-amount">🏆 ₹7,000</div>
+                    <p>Certificate + Trophy + Exclusive Merch</p>
+                </div>
+
+                <!-- 3rd Place -->
+                <div class="prize-card bronze animate-on-scroll delay-2">
+                    <div class="trophy-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <h3>3rd Place</h3>
+                    <div class="prize-amount">🏆 ₹3,000</div>
+                    <p>Trophy + Certificate + Swag</p>
+                </div>
             </div>
 
-            <div class="admission-steps">
-                <div class="step-row">
-                    <div class="step-label">Mirai AI Test</div>
-                    <div class="step-value">To be announced</div>
+            <!-- Participation Goodies Banner -->
+            <div class="goodies-banner animate-on-scroll delay-3">
+                <div class="goodies-glow"></div>
+                <div class="goodies-content">
+                    <h3>Participation Perks</h3>
+                    <p>Every participant walks away with exclusive swag via our partners!</p>
+                    <ul class="goodies-list">
+                        <li><i data-lucide="check-circle"></i> Swags and Goodies</li>
+                        <li><i data-lucide="check-circle"></i> Networking wth industry experts</li>
+                        <li><i data-lucide="check-circle"></i> Certificate of Participation</li>
+                        <li><i data-lucide="check-circle"></i> Delicacies</li>
+                    </ul>
+                    <a href="#register" class="btn-primary btn-claim mt-8">
+                        Register to Claim <i data-lucide="arrow-right"></i>
+                    </a>
                 </div>
-                <div class="step-row">
-                    <div class="step-label">Last day to apply</div>
-                    <div class="step-value">To be announced</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-label">Results</div>
-                    <div class="step-value">Within 5 Days</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-label">Personal Interview</div>
-                    <div class="step-value">Online / Offline</div>
-                </div>
-                <div class="step-row">
-                    <div class="step-label">Final Offer</div>
-                    <div class="step-value">Within 5 days of interview</div>
+                <div class="goodies-images">
+                    <img src="goodie_tshirt.png" alt="T-Shirt" class="goodie-img floating-1">
+                    <img src="goodie_mug.png" alt="Mug" class="goodie-img floating-2">
+                    <img src="goodie_certificate.png" alt="Certificate" class="goodie-img floating-3">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Life @ Mirai -->
-    <section class="section life-at-mirai">
+    <!-- Schedule Section -->
+    <section id="schedule" class="section">
         <div class="container">
-            <h2 class="section-title">Life @ Mirai</h2>
-            <p class="section-subtitle">Life Beyond Classrooms</p>
+            <h2 class="section-title">Event Schedule</h2>
 
-            <div class="life-carousel-container">
-                <button class="carousel-btn prev" id="life-prev">❮</button>
-                <div class="life-carousel">
-                    <div class="life-card"
-                        style="background-color: #e5e7eb; background-image: url('assets/images/life1.jpg');"></div>
-                    <div class="life-card"
-                        style="background-color: #d1d5db; background-image: url('assets/images/life2.jpg');"></div>
-                    <div class="life-card"
-                        style="background-color: #9ca3af; background-image: url('assets/images/life3.jpg');"></div>
-                    <div class="life-card"
-                        style="background-color: #6b7280; background-image: url('assets/images/life4.jpg');"></div>
-                    <!-- Duplicate cards for demonstration/filling -->
-                    <div class="life-card"
-                        style="background-color: #e5e7eb; background-image: url('assets/images/life1.jpg');"></div>
-                    <div class="life-card"
-                        style="background-color: #d1d5db; background-image: url('assets/images/life2.jpg');"></div>
-                </div>
-                <button class="carousel-btn next" id="life-next">❯</button>
-            </div>
-        </div>
-    </section>
+            <div class="timeline">
+                <div class="timeline-line"></div>
 
-    <!-- Testimonials -->
-    <section class="section testimonials">
-        <div class="container">
-            <h2 class="section-title">Testimonials</h2>
-            <p class="section-subtitle">Real talk from Seniors</p>
+                <!-- Round 1 -->
+                <div class="timeline-item left animate-on-scroll">
+                    <a href="Round 1 PPT.pdf" class="btn-download mt-4" target="_blank">
+                        <i data-lucide="file-text"></i>
+                        Download Round 1 Guidelines (PDF)
+                    </a>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="t-header">
-                        <div class="avatar"></div>
-                        <div class="t-info">
-                            <h4>Jiya Kaushik</h4>
-                            <span>Batch'25|Hi-Tech</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="round-header">
+                            <i data-lucide="monitor"></i>
+                            <h3>Round 1: Virtual Submission</h3>
+                        </div>
+                        <ul class="timeline-details">
+                            <li><strong>Deadline:</strong> Dec 17th 11:59 PM</li>
+                            <li><strong>Submit:</strong> PPT + Idea + Sector + 3min Video</li>
+                            <li><strong>Platform:</strong> Online Submission Portal</li>
+                        </ul>
+                        <div class="evaluation-criteria">
+                            <p>Selection: Top 15 teams shortlisted</p>
                         </div>
                     </div>
-                    <p class="t-text">I joined Mirai with a lots of doubts, but the experience has been much better than
-                        I expected. The classes are practical, mentors explain everything patiently, and the daily
-                        coding practice has really boosted my confidence. Also, Varun Sir is my favourite. His guidence
-                        has hepled me a lot.</p>
                 </div>
-                <div class="testimonial-card">
-                    <div class="t-header">
-                        <div class="avatar"></div>
-                        <div class="t-info">
-                            <h4>Molly Arora</h4>
-                            <span>Batch'25|Hi-Tech</span>
+
+                <!-- Round 2 -->
+                <div class="timeline-item right animate-on-scroll">
+                    <a href="Round 2  Bringing Your Idea to Life (Final Round).pdf" class="btn-download mt-4"
+                        target="_blank">
+                        <i data-lucide="file-text"></i>
+                        Download Round 2 Guidelines (PDF)
+                    </a>
+
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="round-header">
+                            <i data-lucide="users"></i>
+                            <h3>Round 2: Offline Grid (Dec 19th)</h3>
                         </div>
+                        <ul class="timeline-details timeline-schedule">
+                            <li><span>09:30 AM</span> Registration</li>
+                            <li><span>10:30 AM</span> Opening Ceremony & Panel Intro</li>
+                            <li><span>11:00 AM</span> Shark Tank Pitching Event</li>
+                            <li><span>01:00 PM</span> Lunch Break</li>
+                            <!-- <li><span>02:00 AM</span> Pitching Event Resumes</li> -->
+                            <li><span>04:00 PM</span> Prize Distribution Ceremony</li>
+                        </ul>
                     </div>
-                    <p class="t-text">I left NIT to join Mirai because I wanted something more hands-on, and
-                        I'm glad I made that choice. Here, everything is practical, coding, AI tools, projects,
-                        everything. The mentors explain concepts so clearly that even the tough topics start making
-                        sense.
-                    </p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="t-header">
-                        <div class="avatar"></div>
-                        <div class="t-info">
-                            <h4>Ritik</h4>
-                            <span>Batch'25|Rathinam</span>
-                        </div>
-                    </div>
-                    <p class="t-text">What surprised me the most about Mirai is how comfortable the environment is.
-                        I'm usually shy, but herte I tarted asking questions, talking to mentors, and even helping
-                        classmates. The learning feels real and personal. For the first time, I'm actually excited to
-                        study.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- The Mirai Advantage -->
-    <section class="section advantage">
+    <!-- Event Resources Section (Moved Down) -->
+    <section id="resources" class="section bg-light-blue">
         <div class="container">
-            <h2 class="section-title">The Mirai Advantage</h2>
-            <p class="section-subtitle">Why choose Mirai School of Technology for your AI journey</p>
+            <h2 class="section-title">Event Resources</h2>
+            <p class="section-subtitle">Download official event materials</p>
 
-            <div class="advantage-grid">
-                <div class="adv-card">
-                    <div class="adv-icon"></div>
-                    <h4 style="font-size: 22px;">AI-First Education</h4>
-                    <p>Stay ahead with the tools, stacks, and trends that will shape 2030 and beyond.</p>
-                </div>
-                <div class="adv-card">
-                    <div class="adv-icon"></div>
-                    <h4 style="font-size: 22px;">Code with AI from Day 1</h4>
-                    <p>Start building real AI-powered applications right from your very first class.</p>
-                </div>
-                <div class="adv-card">
-                    <div class="adv-icon"></div>
-                    <h4 style="font-size: 22px;">Infra Designed for Coders</h4>
-                    <p>Code in smart classrooms, with robotics & Apple labs featuring built-in debugging zones.</p>
-                </div>
-                <div class="adv-card">
-                    <div class="adv-icon"></div>
-                    <h4 style="font-size: 22px;">Selection of Top 20%</h4>
-                    <p>Study with a selective, merit-based cohort,
+            <div class="resources-grid">
+                <div class="resource-card animate-on-scroll">
+                    <div class="resource-icon-lg">
+                        <i data-lucide="image"></i>
+                    </div>
+                    <h3>Official Event Poster</h3>
+                    <p>Download the official Mirai 0-1 Ideathon poster to share.</p>
+                    <a href="Poster.jpeg" class="btn-download" download>
+                        <i data-lucide="download"></i>
+                        <span>Download</span>
+                    </a>
 
-                        fostering peer learning and competition.</p>
+                    <span class="file-meta">IMG • 2.5 MB</span>
                 </div>
-                <div class="adv-card">
-                    <div class="adv-icon"></div>
-                    <h4 style="font-size: 22px;">Tech Practitioners as Teachers</h4>
-                    <p>Learn directly from industry experts working with GenAI, LLMs, and code copilots.</p>
+
+                <div class="resource-card animate-on-scroll delay-1">
+                    <div class="resource-icon-lg">
+                        <i data-lucide="presentation"></i>
+                    </div>
+                    <h3>Event Presentation</h3>
+                    <p>Detailed information about rounds, rules, and guidelines.</p>
+                    <a href="Mirai Ideathon ppt.pdf" class="btn-download" download>
+                        <i data-lucide="download"></i>
+                        <span>Download</span>
+                    </a>
+
+                    <span class="file-meta">PDF • 5.8 MB</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Placement Assistance -->
-    <section class="section placement">
+    <!-- Club Introduction Section -->
+    <section id="club" class="section">
         <div class="container">
-            <h2 class="section-title text-white" style="color: white;">Placement Assistance</h2>
+            <h2 class="section-title">About NexCell</h2>
+            <div class="club-intro animate-on-scroll">
+                <p>NexCell is the premier Entrepreneurship Club of Mirai School of Technology. We foster innovation,
+                    leadership, and the startup spirit among students, turning passionate learners into future founders.
+                </p>
+            </div>
 
-            <div class="placement-grid">
-                <div class="placement-item">
-                    <div class="p-icon">
-                        <svg width="52" height="52" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M20 21C20 16.5817 16.4183 13 12 13C7.58172 13 4 16.5817 4 21" stroke="white"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+            <div class="team-section mt-12">
+                <h3 class="subsection-title">Our Team</h3>
+                <div class="team-grid" id="teamGrid">
+                    <!-- Initial 5 Members -->
+                    <!-- Using UI Avatars for placeholders -->
+                    <div class="team-card animate-on-scroll">
+                        <a href="https://ibb.co/7tP0ckD8"><img src="https://i.ibb.co/B2bYDnJd/Anushka-Dewangan.jpg"
+                                alt="Anushka-Dewangan" border="0"></a>
+                        <h4>Anushka-Dewangan</h4>
+                        <p>PR Head</p>
                     </div>
-                    <h3 style="color: white;">20+ Career Mentors</h3>
-                    <p>Dedicated industry<br>professionals guiding your career path</p>
-                </div>
-                <div class="placement-divider"></div>
-                <div class="placement-item">
-                    <div class="p-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke="white" stroke-width="2" />
-                            <path
-                                d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21"
-                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                    <div class="team-card animate-on-scroll delay-1">
+                        <a href="https://ibb.co/6cfCKbg7"><img src="https://i.ibb.co/WNYJrFg4/Manhoosss.jpg"
+                                alt="Manhoosss" border="0"></a>
+                        <h4>Yashasya Kodwani</h4>
+                        <p>Coordinator</p>
                     </div>
-                    <h3 style="color: white;">50+ Hiring Partners</h3>
-                    <p>Dedicated industry<br> professionals guiding your career path</p>
-                </div>
-                <div class="placement-divider"></div>
-                <div class="placement-item">
-                    <div class="p-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M23 6L13.5 15.5L8.5 10.5L1 18" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M17 6H23V12" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                    <div class="team-card animate-on-scroll delay-2">
+                        <a href="https://ibb.co/tp6B2tFQ">
+                            <img src="https://i.ibb.co/MkHn14QZ/Whats-App-Image-2025-12-12-at-19-24-40.jpg" alt="Sapnil"
+                                border="0">
+                        </a>
+                        <h4>Sapnil Biswas</h4>
+                        <p>Tech Head</p>
                     </div>
-                    <h3 style="color: white;">100% Internship Support</h3>
-                    <p>Dedicated industry<br> professionals guiding your career path</p>
+
+                    <div class="team-card animate-on-scroll delay-3">
+                        <a href="https://ibb.co/Y47QHJfq"><img src="https://i.ibb.co/Fkb3Rc8j/Akshara.jpg" alt="Akshara"
+                                border="0"></a>
+                        <h4>Akshara P</h4>
+                        <p>Creative Head</p>
+                    </div>
+                    <div class="team-card animate-on-scroll delay-4">
+                        <a href="https://ibb.co/tw9w6nbQ"><img src="https://i.ibb.co/BH9HJvgc/Prateek.jpg" alt="Prateek"
+                                border="0"></a>
+                        <h4>Prateek Deep Das</h4>
+                        <p>Design Head</p>
+                    </div>
                 </div>
+
+                <!-- Hidden Members Container -->
+                <div class="team-grid hidden-members" id="moreMembers">
+                    <div class="team-card">
+                        <a href="https://ibb.co/7tkTTyNJ"><img src="https://i.ibb.co/RTjMMH4p/Ritik.jpg" alt="Ritik"
+                                border="0"></a>
+                        <h4>Ritik Kumar</h4>
+                        <p>Backend Debugger</p>
+                    </div>
+                    <div class="team-card">
+                        <a href='https://postimg.cc/62STJv4j' target='_blank'><img
+                                src='https://i.postimg.cc/62STJv4j/Jhalak.jpg' border='0' alt='Jhalak'></a>
+                        <h4>Jhalak Yadav</h4>
+                        <p>Marketing Team</p>
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/d0xVnhr2"><img
+                                src="https://i.ibb.co/LzHc4G8t/Harshini.jpg" alt="Harshini" border="0"></a>
+                        <h4>Harshini.R.Havanur</h4>
+                        <p>Marketing Head</p>
+
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/mVNzvF2v"><img
+                                src="https://i.ibb.co/HfhgNpbN/Lokesh.jpg" alt="Lokesh" border="0"></a>
+                        <h4>Lokesh Kumar Sahu</h4>
+                        <p>PR Team</p>
+
+                    </div>
+                    <div class="team-card"><a href="https://imgbb.com/"><img
+                                src="https://i.ibb.co/sdmcQX7J/Pianak-Shah.jpg" alt="Pianak Shah" border="0"></a>
+                        <h4>Pinank Shah</h4>
+                        <p>PR Team</p>
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/Jw9ycdtN"><img
+                                src="https://i.ibb.co/G4qtdJpX/Deepti.jpg" alt="Deepti" border="0"></a>
+                        <h4>Kotalani Deepthi Reddy</h4>
+                        <p>Sub-Designer</p>
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/yBqT9qhQ"><img
+                                src="https://i.ibb.co/Wpf9hfD2/Sriprakash.jpg" alt="Sriprakash" border="0"></a>
+                        <h4>Sriprakash Jaiswal</h4>
+                        <p>Collaborator</p>
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/Ps31m6Tr"><img
+                                src="https://i.ibb.co/0p8YDGBn/Keerthi.jpg" alt="Keerthi" border="0"></a>
+                        <h4>Keerthi Kumar</h4>
+                        <p>Tech Lead</p>
+                    </div>
+                    <div class="team-card"><a href="https://ibb.co/TM8MCTQk"><img
+                                src="https://i.ibb.co/Kxqx1GtX/Krishna.jpg" alt="Krishna" border="0"></a><br />
+                        <h4>Krishna Negi</h4>
+                        <p>Content Writer</p>
+                    </div>
+                </div>
+
+                <button class="btn-outline mt-8" id="viewTeamBtn">
+                    View More Team Members
+                    <i data-lucide="chevron-down"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Campus of Tomorrow -->
-    <section class="section campus-tomorrow">
+    <!-- Video & Registration Section -->
+    <section id="register" class="section bg-gradient-light">
+        <div class="container registration-container">
+            <div class="video-preview animate-on-scroll">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/8K_fbb5F-8?si=qZSjqFXovv24KrcJ"
+                    title="Mirai 0-1 Ideathon Teaser" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="border-radius: 16px;">
+                </iframe>
+            </div>
+
+
+            <div class="registration-content animate-on-scroll delay-1">
+                <h2>Ready to Innovate?</h2>
+                <p>Join us for the Mirai 0-1 Ideathon and showcase your skills to the world. Don't miss this opportunity
+                    to win big prizes and network with industry leaders.</p>
+
+                <div class="warning-box">
+                    <i data-lucide="info"></i>
+                    <span>Registration redirects to external portal</span>
+                </div>
+
+                <a href="https://msot-nexcell-ideathon.vercel.app/" class="btn-primary btn-large">
+                    Register Now
+                    <i data-lucide="external-link"></i>
+                </a>
+                <p class="small-note">Deadline: Dec 17th 11:59 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section bg-light-blue">
         <div class="container">
-            <div class="cta-banner">
-                <div class="cta-content">
-                    <h2>Welcome to the Campus of Tomorrow</h2>
-                    <p>Designed to spark innovation for boundary-pushing students.</p>
-                    <button class="cta-btn">Apply Now</button>
+            <h2 class="section-title">Our Sponsors</h2>
+            <p class="section-subtitle">Empowering Innovation</p>
+
+            <div class="sponsors-grid">
+                <!-- Sponsor 1 -->
+                <div class="sponsor-card animate-on-scroll">
+                    <img src="https://ui-avatars.com/api/?name=Sponsor+1&background=ffffff&color=2563eb&size=150"
+                        alt="Sponsor 1">
+                    <h4>Platinum Sponsor</h4>
                 </div>
-                <div class="cta-gallery">
-                    <!-- Placeholder for Bento Grid Images -->
-                    <div class="gallery-item g1 "
-                        style="background-color: #ddd; background-image: url('assets/images/campus3.jpg'); width: 100%; height: 200px;">
-                        1</div>
-                    <div class="gallery-item g2"
-                        style="background-color: #ccc; background-image: url('assets/images/campus4.jpg'); width: 49%; height: 150px;">2</div>
-                    <div class="gallery-item g3"
-                        style="background-color: #bbb; background-image: url('assets/images/campus5.jpg'); width: 49%; height: 150px;">3</div>
-                    <div class="gallery-item g4"
-                        style="background-color: #aaa; background-image: url('assets/images/campus6.jpg');width: 49%; height: 150px;">
-                        4</div>
-                    <div class="gallery-item g5"
-                        style="background-color: #aaa; background-image: url('assets/images/campus6.jpg');width: 49%; height: 150px;">5</div>
+
+                <!-- Sponsor 2 -->
+                <div class="sponsor-card animate-on-scroll delay-1">
+                    <img src="https://ui-avatars.com/api/?name=Sponsor+2&background=ffffff&color=2563eb&size=150"
+                        alt="Sponsor 2">
+                    <h4>Gold Sponsor</h4>
+                </div>
+
+                <!-- Sponsor 3 -->
+                <div class="sponsor-card animate-on-scroll delay-2">
+                    <img src="https://ui-avatars.com/api/?name=Sponsor+3&background=ffffff&color=2563eb&size=150"
+                        alt="Sponsor 3">
+                    <h4>Silver Sponsor</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Scholarship Program -->
-    <section class="section scholarship">
+    <!-- Venue Section -->
+    <section id="venue" class="section">
         <div class="container">
-            <h2 class="section-title">Scholarship Program</h2>
-            <p class="section-subtitle">Unlocking potential through financial support.</p>
-
-            <div class="scholarship-grid">
-                <div class="scholarship-card">
-                    <div class="sch-icon">🎓</div>
-                    <h4>Merit-based Scholarship</h4>
-                    <p>Upto 100% tuition waiver for top performers.</p>
-                    <p style="color: #5b75b8;font-weight: bold;">₹4L-₹16L</p>
+            <h2 class="section-title">Venue</h2>
+            <div class="venue-card animate-on-scroll">
+                <div class="venue-info">
+                    <h3>Rathinam Institute of Technology</h3>
+                    <address>
+                        <a href="https://maps.app.goo.gl/bmG41LCKTDCvHgF49" target="_blank" rel="noopener noreferrer"
+                            class="venue-link">
+                            <i data-lucide="map-pin"></i>
+                            Survey No. 137, Doddakamanahalli, Begur Hobli,<br>Bengaluru South - 560076
+                        </a>
+                    </address>
                 </div>
-                <div class="scholarship-card">
-                    <div class="sch-icon">⚖️</div>
-                    <h4>Need-based Scholarship</h4>
-                    <p>Financial aid for deserving students.</p>
-                    <p style="color: #5b75b8;font-weight: bold;">Upto to ₹8L</p>
-                </div>
-                <div class="scholarship-card">
-                    <div class="sch-icon">♀️</div>
-                    <h4>Women in Tech</h4>
-                    <p>Special scholarships to encourage diversity.</p>
-                    <p style="color: #5b75b8;font-weight: bold;">₹2L - ₹5L</p>
-                </div>
-                <div class="scholarship-card">
-                    <div class="sch-icon">🏆</div>
-                    <h4>2L - 5L Excellence</h4>
-                    <p>Recognizing exceptional talent in specific fields.</p>
-                    <p style="color: #5b75b8;font-weight: bold;">Up to ₹6L</p>
+                <div class="venue-map">
+                    <!-- Google Maps Embed for Rathinam Technical Campus -->
+                    <iframe
+                        src="https://maps.google.com/maps?q=Survey+No.+137,+Doddakamanahalli,+Begur+Hobli,+Bengaluru+South+-+560076&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Financing Options -->
-    <section class="section financing">
-    <div class="container">
-        <h2 class="section-title">Financing Options</h2>
-            <p class="section-subtitle">Easy EMI available through our financing partners, subject to meeting financial
-                eligibility criteria.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logos">
+                    <img src="Nex.png" alt="Mirai Logo" class="footer-logo">
+                    <div class="nexcell-text">NexCell</div>
+                </div>
+                <h3>Contact Us</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i data-lucide="mail"></i>
+                        <a href="mailto:nexcellrathinam@gmail.com">
+                            nexcellrathinam@gmail.com
+                        </a>
+                    </li>
 
-            <div class="bank-logos">
-                <div class="bank-logo-item">
-                    <img src="https://assets.thehansindia.com/h-upload/2023/06/27/1361099-idfc-first-bank.jpg"
-                        alt="IDFC FIRST Bank" class="bank-logo-img">
-                </div>
-                <div class="vertical-divider"></div>
-                <div class="bank-logo-item">
-                    <img src="data:image/png;base64,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"
-                        alt="YES BANK" class="bank-logo-img">
-                </div>
-                <div class="vertical-divider"></div>
-                <div class="bank-logo-item">
-                    <img src="https://du8ef2qvb6oy7.cloudfront.net/media/images/0c9f73b1-9f72-42be-affa-c16bd19a4f48/propelldlogo2x.png?fm=jpg&q=80&fit=max&crop=1000%2C1000%2C0%2C0&w=1000"
-                        alt="propelld" class="bank-logo-img propelld-logo">
-                </div>
+                    <li>
+                        <i data-lucide="phone"></i>
+                        <a href="tel:+918623010383">
+                            +91 8623010383
+                        </a>
+                    </li>
+
+                    <li>
+                        <i data-lucide="phone"></i>
+                        <a href="tel:+919726128809">
+                            +91 9726128809
+                        </a>
+                    </li>
+
+                    <li>
+                        <i data-lucide="map-pin"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Rathinam+Institute+of+Technology+Bangalore"
+                            target="_blank">
+                            Rathinam Institute of Technology,<br>Bangalore
+                        </a>
+                    </li>
+                </ul>
+
             </div>
 
-            <!-- New Bottom CTA Cards -->
-            <div class="cta-cards-container">
-                <!-- Brochure Card -->
-                <div class="cta-bottom-card">
-                    <div class="cta-text-content">
-                        <h3>Learn more about Mirai School of Technology</h3>
-                        <p>Download our comprehensive brochure to explore programs, curriculum, and opportunities</p>
-                    </div>
-                    <button class="cta-pill-btn blue-btn" style="background-color: #3f51f5;">Download Brochure</button>
-                </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#prizes">Prizes</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+            </div>
 
-                <!-- Contact/Apply Card -->
-                <div class="cta-bottom-card">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span class="icon">🌐</span> <a href="https://miraisot.com">miraisot.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="icon">✉️</span> <a href="mailto:connect@msot.org">connect@msot.org</a>
-                        </div>
-                        <div class="contact-item">
-                            <span class="icon">📞</span> <a href="tel:+918860316031">+91 8860316031</a>
-                        </div>
-                    </div>
-                    <div class="apply-action">
-                        <p>Limited seats available. Claim yours now.</p>
-                        <button class="cta-pill-btn blue-btn" style="background-color: #3f51f5;">Apply Now</button>
-                    </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/nexcell_mirai?igsh=dmJtZnFhaXo5d2Zs" aria-label="Instagram"><i
+                            data-lucide="instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nex-cell/" aria-label="LinkedIn"><i
+                            data-lucide="linkedin"></i></a>
+                    <!-- <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a> -->
                 </div>
             </div>
         </div>
-    </section>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NexCell Entrepreneurship Club. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
-
 </body>
 
 </html>
