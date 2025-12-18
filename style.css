@@ -2650,3 +2650,177 @@ ul {
             transform: translateY(0px);
         }
     }
+
+
+    /* Shortlisted Section Styles */
+.bg-gradient-shortlist {
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    padding: 100px 0;
+}
+
+.shortlist-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.result-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.shortlist-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.poster-wrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.poster-wrapper:hover {
+    transform: translateY(-10px);
+}
+
+.shortlist-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.poster-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poster-wrapper:hover .poster-overlay {
+    opacity: 1;
+}
+
+.shortlist-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.shortlist-note p {
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+/* Shortlisted Section Styles */
+.bg-gradient-shortlist {
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+    padding: 80px 0;
+}
+
+.shortlist-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.result-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Centering and Sizing the Poster */
+.shortlist-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the poster */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.poster-wrapper {
+    position: relative;
+    max-width: 500px; /* Adjust this value to make the image smaller or larger */
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.poster-wrapper:hover {
+    transform: scale(1.02); /* Subtle zoom on hover */
+}
+
+.shortlist-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hover effect for download button */
+.poster-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poster-wrapper:hover .poster-overlay {
+    opacity: 1;
+}
+
+/* Next Steps Note */
+.shortlist-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1.25rem;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px dashed #cbd5e1;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shortlist-note p {
+    color: #475569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
